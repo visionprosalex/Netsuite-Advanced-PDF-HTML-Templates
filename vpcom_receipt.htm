@@ -90,6 +90,7 @@
 	</tr>
 </thead>
 </#if>
+<#if !item.custcol_kotn_is_frame_config>
 	<tr>
 	<td align="center" colspan="2" line-height="150%">${item.quantity}</td>
 	<td colspan="8"><span style="font-weight: bold; line-height: 150%; color: #333333;">${item.item}</span><br />${item.description}</td>
@@ -97,6 +98,7 @@
 	<td align="right" colspan="4">${item.rate}</td>
 	<td align="right" colspan="4">${item.amount}</td>
 	</tr>
+</#if>
 	</#list><!-- end items --></table>
 
 <hr style="width: 100%; color: #d3d3d3; background-color: #d3d3d3; height: 1px;" /></#if>
