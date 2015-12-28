@@ -90,7 +90,7 @@
 	</tr>
 </thead>
 </#if>
-<#if !item.custcol_kotn_is_frame_config>
+<#if (item.custcol_kotn_is_frame_config != 'T')>
 	<tr>
 	<td align="center" colspan="2" line-height="150%">${item.quantity}</td>
 	<td colspan="8"><span style="font-weight: bold; line-height: 150%; color: #333333;">${item.item}</span><br />${item.description}</td>
